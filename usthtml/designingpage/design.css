@@ -1,0 +1,75 @@
+#image
+{
+    
+    background-image: url("/vsstudio/usthtml/designingpage/milky-way-2750627__340.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+     background-position: 2px;
+     height: 600px;
+     padding: 5px;
+     color:white;
+     
+     
+
+}
+/* form{ */
+    /* background-image: url("/vsstudio/usthtml/designingpage/milky-way-2750627__340.jpg"); */
+/* } */
+p,h1,h3{
+    text-align: center;
+    padding: 5px;
+    color:white;
+    
+}
+input[type="search"]
+{
+    height: 30px;
+    width:600px;
+    margin-left: 400px;
+    border: 1px solid black;
+    border-radius:40px;
+    align-content: center;
+}
+td{
+    color: aliceblue;
+    text-align: left;
+}
+#picture{
+
+    width:2000px;
+    height: 400px;
+    
+    
+    
+
+     /*horizontal vertical */
+}
+
+#ab{
+    font-size: 50px;
+    font-family:'Arial Narrow Bold';
+    color: white;
+}
+.s{
+    font-size: 18px;
+    font-family: "Cambria";
+    color:white;
+}
+#v{
+    background-color:green;
+    margin: 21px 10000px 0px 550px;
+    color:black;
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    
+}
+#r{
+
+   margin: 15px 0px 0px 200px;
+   text-align: center;
+   color: black;
+   
+}

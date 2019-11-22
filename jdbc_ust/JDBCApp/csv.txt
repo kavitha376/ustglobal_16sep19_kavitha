@@ -1,0 +1,7 @@
+20,ammulya,10000,F
+21,abhilash,12000,M
+22,rama,15900,M
+23,kamali,2500,F
+25,annnaa,4567,F
+26,mamatha,23456,F
+27,kariya,34456,M

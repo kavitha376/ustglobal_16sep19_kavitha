@@ -1,0 +1,36 @@
+form{
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 450px;
+    height: 300px;
+    margin: 200px 0 0 250px;
+    text-align: center;
+    color:white;
+    font-size: 30px;
+    padding: 30px;
+    background-image: url(/vsstudio/cssust/image/original.gif);
+
+}
+body{
+    background-image: url(/vsstudio/cssust/image/children-817368_960_720.jpg);
+
+    background-position: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+input[type="text"],input[type="password"]{
+    width: 200px;
+    height: 15px;
+    border: 1px solid blanchedalmond;
+    border-radius: 100px;
+
+}
+input[type="text"]:focus,input[type="password"]:focus{
+    outline: none
+}
+input[type="submit"]{
+    margin-top: 20px;
+    padding: 10px 35px;
+    border-radius: 50px;
+    background-color: chocolate;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            border: 2px solid black;
+            align-content: center;
+            height: 300px;
+            width: 400px;
+            text-align: center;
+            padding-top: 30px;
+            margin: 150px;
+            
+        }
+        #eye
+        {
+            padding:5px 10px;
+            font-size:14px;
+            border-radius: 5px;
+            border:1px solid blueviolet;
+            cursor: pointer;
+            color: blue;
+            box-shadow: 1px 1px 1px 1px white;
+            background: linear-gradient(white,white,white); 
+        }
+    </style>
+    
+</head>
+<body>
+    <form>
+    <h2>login form</h2>
+     <label>username:</label>
+    <input id='username' type="text" placeholder="enter username" onkeyup="printUsername()"/><br><br>
+    
+    
+    <label>password:</label>
+     <input id='password' type="password" placeholder="enter password"/>
+     <!-- <button type="checkbox" id="eye" value="checkbox">show message</button> -->
+     <input type="checkbox" id='check' value="checkbox" onchange="document.getElementById('password').type=this.checked?'text:'password'">
+     <br><br>
+    
+     <input type="button" value="login"/>      
+     </form>
+     
+    <style src="assignment.js"></style>
+</body>
+</html>
