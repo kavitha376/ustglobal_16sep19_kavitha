@@ -1,0 +1,37 @@
+<div class="bg-img">
+<div class="container">
+            <h1 style="font-family: fantasy; color: red;background-color: seashell; text-align: center; float:center;" >Books List</h1><br>
+            <input type="search"  class="form-control" name="search" [(ngModel)]='search' placeholder="Search Book Name"><br>
+            <h4 style="text-align: center; color: red;">{{msg}}</h4>
+
+            <table class="table">
+
+        <thead class="thead-inverse bg-light">
+                
+            <tr>
+                <th>BookId</th>
+                <th>BookName</th>
+                <th>Author1</th>
+                <th>Author2</th>
+                <th>Publisher</th>
+                <th>YearOfPublication</th>
+                <th>delete</th>
+                
+            </tr>
+            </thead>
+            <tbody class="bg-light">
+                <tr *ngFor='let book of books | filter : search'>
+                    <td scope="row">{{book.bookId}}</td>
+                    <td>{{book.bookName}}</td>
+                    <td>{{book.author1}}</td>
+                    <td>{{book.author2}}</td>
+                    <td>{{book.publisher}}</td>
+                    <td>{{book.yearOfPublication}}</td>
+                    <td><button class="btn btn-danger" (click)='deleteBook(book)'>Delete</button></td>
+
+                </tr>
+               
+            </tbody>
+    </table>
+    </div>
+    </div>

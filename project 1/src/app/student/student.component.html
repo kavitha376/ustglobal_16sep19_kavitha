@@ -1,0 +1,35 @@
+<marquee behavior="" direction=""><h1 style="font-family: cursive;color:red" class="mt-2">Welcome!,Have a Good Day!!</h1></marquee>
+<div class="bg-img">
+<h1 style="font-family: fantasy;text-align: center; color: darkgreen; background-color: wheat;">Available Books List</h1><br>
+
+<div class="float-center">
+<table class="table table-striped table-inverse table-responsive mt-8 ml-2">
+<input type="search"  class="form-control" [(ngModel)]='search'  style="width: 56%;"  placeholder="Search Book Name"> <br>
+<h4 style="text-align: center; color: red;">{{msg}}</h4>
+<thead class="thead-inverse bg-light">
+    <tr>
+        <th>Book Id</th>
+        <th>Book Name</th>
+        <th>Author1</th>
+        <th>Author2</th>
+        <th>Publisher</th>
+        <th>Year Of Publication</th>
+        <th>Request</th>
+        
+    </tr>
+    </thead>
+    <tbody class="bg-light">
+        <tr *ngFor='let book of books |filter:search'>
+            <td scope="row">{{book.bookId}}</td>
+            <td>{{book.bookName}}</td>
+            <td>{{book.author1}}</td>
+            <td>{{book.author2}}</td>
+            <td>{{book.publisher}}</td>
+            <td>{{book.yearOfPublication}}</td>
+            <td><button  class="btn btn-success" (click)='SendRequest(book)'>Request</button></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+</div>
