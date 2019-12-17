@@ -1,0 +1,41 @@
+<form action=""  class="col-md-4 offset-4 mt-5 card card-body" #form="ngForm" (ngSubmit)='UserData(form)'>
+        <h1 class="text-center bg-dark text-white">user info</h1>
+        <div class="form-group">
+    
+            <input type="text" name="username" id="username" class="form-control" placeholder="user name" #username="ngModel" ngModel  required >
+         
+        </div>
+        <div class="form-group">
+    
+                <input type="text" name="user" id="user" class="form-control" placeholder="user page" #user="ngModel" ngModel required >
+             
+            </div>
+            <div class="form-group">
+                <label>Gender</label><br>
+               <input type="radio" name="gender" id="gender">male
+               <input type="radio" name="gender" id="gender">female<br>
+               <input type="radio" name="gender" id="gender">others
+               
+     
+            </div>
+    
+        <div class="form-group">
+                <input type="email" name="email" id="email" class="form-control" placeholder="user gmail" #email="ngModel" ngModel required >
+            
+        </div>
+        
+        <div class="form-group">
+                <input type="password" name="password" id="password" class="form-control" placeholder="password" #password="ngModel" ngModel required>
+            
+        </div>
+        <div class="form-group">
+                <input type="password" name="password" id="password" class="form-control" placeholder="re-enter password" #password="ngModel" ngModel required>
+            
+        </div>
+        <div class="form-group">
+                <button type="" class="btn btn-outlinr-success float-right" >add user</button>
+                
+            </div>
+    </form>
+    
+    

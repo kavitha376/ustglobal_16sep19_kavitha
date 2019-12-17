@@ -1,0 +1,9 @@
+<div class="col-md-4 float-left card card-body">
+
+    <div class="card card-body" *ngFor= 'let movie of movies'>
+        <img src="{{movie.imgUrl}}" class='card img-top' alt="" (click)='sendmovie(movie)'>
+        <h1>{{movie.name}}</h1>
+        <h1>{{movie.ratting}}</h1>
+    </div>
+</div>
+<app-moviechild [movie]='selectedMovie'></app-moviechild>

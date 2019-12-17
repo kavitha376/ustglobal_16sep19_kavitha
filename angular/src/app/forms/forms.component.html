@@ -1,0 +1,35 @@
+<form action=""  class="col-md-4 offset-4 mt-5 card card-body" #form="ngForm" (ngSubmit)="CandidateData(form)">
+        <h1 class="text-center bg-dark text-white">candidate info</h1>
+        <div class="form-group">
+    
+            <input type="text" name="company" id="company" class="form-control" placeholder="companyname"  #company="ngModel" ngModel required >
+         
+        </div>
+            <div class="form-group">
+               <select class="form-control" id="skills">
+                   <option disabled>skills</option>
+                   <option>java</option>
+                   <option>j2ee</option>
+               </select>
+     
+            </div>
+    
+        <div class="form-group">
+                <input type="number" name="year of exp" id="year" class="form-control" placeholder="year of exp" #year="ngModel" ngModel required >
+            
+        </div>
+        <div class="form-group">
+                <input type="text" name="mctc" id="mctc" class="form-control" placeholder="mctc"  #mctc="ngModel" ngModel required >
+            
+        </div>
+        <div class="form-group">
+                <input type="text" name="location" id="location" class="form-control" placeholder="location"  #location="ngModel" ngModel required>
+            
+        </div>
+        <div class="form-group">
+                <button type="" class="btn btn-outlinr-success float-right" >add reguirement</button>
+                
+            </div>
+    </form>
+    
+    

@@ -1,0 +1,42 @@
+
+<h1 [innerText]="name"></h1>>
+ <img [src]="imgUrl" [class.rounded-circle] = "isActive" alt="nature">
+ <h1 [style.color]="colorName" [class.bg-dark] = "isActive" [class.bg-primary] = "!isActive">{{address}}</h1>
+ <table class="table table-light table-bordered table-striped" >
+     <thead>
+         <tr>
+             <th>name</th>
+             <th>age</th>
+             <th [attr.colspan]="colspanValue">contact number</th>
+             
+         </tr>
+     </thead>
+     <tbody>
+        <tr>
+            <td>chandru</td>
+            <td>45</td>
+            <td>8296638861</td>
+            <td>89900003333</td>
+
+            
+        </tr>
+     </tbody>
+     <tbody>
+        <tr>
+            <td>kavi</td>
+            <td>21</td>
+            <td>8296638861</td>
+            <td>89900003333</td>
+
+        </tr>
+     </tbody>
+     <tbody>
+         <tr>
+        <td>praggya</td>
+        <td>60</td>
+        <td>8296638861</td>
+        <td>89900003333</td>
+    </tr>
+
+     </tbody>
+ </table>
